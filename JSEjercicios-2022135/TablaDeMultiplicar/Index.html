@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/Multiplicar.css" />
+    <script>
+      function Tabla() {
+        let num = numero.value;
+        ventana = window.open("", "", "");
+        ventana.document.write(
+          "<h1 aling=center> Tabla de multiplicar de " + num + "</h1>"
+        );
+        for (j = 1; j < 11; j++) {
+          ventana.document.write(j + " * " + num + "=" + j * num);
+          for (i = 1; i < 2; i++) {
+            ventana.document.write("<br>");
+          }
+        }
+      }
+    </script>
+    <title>Tabla de Multiplicar</title>
+  </head>
+
+  <body style="background-image: url('./fondo.png'); background-size: cover">
+    <marquee
+      bgcolor="#ffffff"
+      width="100%"
+      scrolldelay="2"
+      scrollmount="10"
+      direction="left"
+      loop="infinite"
+    >
+      <h1>Tabla de Multiplicar</h1>
+    </marquee>
+    <center style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 32vh;">
+      <br>
+      <input type="text" id="numero" />
+      <br>
+      <br>
+      <br>
+      <input type="button" value="Presionar" onclick="Tabla()" />
+    </center>
+  </body>
+</html>

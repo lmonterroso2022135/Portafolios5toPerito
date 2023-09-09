@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/StyleSuma.css">
+    <script src="./Js/suma.js"></script>
+    <title>Ejemplo 1</title>
+</head>
+
+<body style="background-image: url('./fondo.png'); background-size: cover; ">
+    <center style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 77vh;">
+        <div class="Suma">
+            <h1 class="Titulo">Suma de dos valores</h1>
+            <p class="text1">Ingrese el primer valor</p>
+            <input type="text" id="num1">
+            <p class="text1">Ingrese el segundo valor</p>
+            <input type="text" id="num2">
+            <br>
+            <br>
+            <br>
+            <button onclick="sumar()">Sumar</button>
+            <br>
+            <p>El resultado es:</p>
+            <input class="resultado" id="resultado"></input>
+        </div>
+    </center>
+</body>
+
+</html>
